@@ -1,1 +1,6 @@
-<h1>Home Page</h1>
+<h1>Bloc Chat</h1>
+<h2>Available Chat Rooms</h2>
+<div ng-repeat="room in home.roomList">
+	<!-- <h3>{{ room.$id }}</h3> -->
+	<p>{{ room.$value }}</p>
+</div>
