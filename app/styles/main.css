@@ -1,0 +1,44 @@
+div p {
+	margin-top: 15px;
+	padding-top: 5px;
+}
+.chat-bar {
+	background-color: #EDF2F7;
+	width: 30%;
+	height: 100%;
+	/*margin: 50px 0px 0px 10px;*/
+	border-right: 5px solid black;
+	position: fixed;
+}
+
+.chat-bar-header {
+	display: block;
+	width: 100%;
+
+}
+
+.chat-bar-header, .chat-bar-body {
+	margin-left: 10px;
+}
+
+.chat-title {
+	padding-top: 15px;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+.modal-header, .modal-body {
+	text-align: center;
+}
+
+.modal-footer {
+	text-align: center;
+}
+
+#btn-new {
+	margin: 0px 0px 15px 30px;
+	padding: 5px;
+	background-color: lightgray;
+	border: 1px solid lightgray;
+	border-radius: 15px;
+}

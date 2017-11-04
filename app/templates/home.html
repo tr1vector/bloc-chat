@@ -1,6 +1,15 @@
-<h1>Bloc Chat</h1>
-<h2>Available Chat Rooms</h2>
-<div ng-repeat="room in home.roomList">
-	<!-- <h3>{{ room.$id }}</h3> -->
-	<p>{{ room.$value }}</p>
+<div class="chat-bar">
+	<div class="chat-bar-header">
+		<h1 class="chat-title">Bloc Chat</h1>
+		<button type="button" id="btn-new" ng-click="home.newRoom()">New Room</button>
+	</div>
+	<div class="chat-bar-body">
+		<h4><strong>Available Chat Rooms</strong></h4>
+
+		<div ng-repeat="room in home.roomList">
+			<!-- <h3>{{ room.$id }}</h3> -->
+			<p>{{ room.$value }}</p>
+		</div>
+	</div>
+
 </div>
