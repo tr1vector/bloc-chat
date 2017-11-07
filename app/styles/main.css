@@ -1,8 +1,15 @@
+/*All*/
+body {
+	font-family: Raleway;
+}
+
+/*Chat Room Side Bar*/
 div p {
 	margin-top: 15px;
 	padding-top: 5px;
 }
 .chat-bar {
+	position: fixed;
 	background-color: #EDF2F7;
 	width: 30%;
 	height: 100%;
@@ -12,13 +19,16 @@ div p {
 }
 
 .chat-bar-header {
-	display: block;
+	display: flex;
 	width: 100%;
+	align-items: center;
 
 }
 
 .chat-bar-header, .chat-bar-body {
-	margin-left: 10px;
+	padding: 10px;
+    height: 75px;
+    position: relative;
 }
 
 .chat-title {
@@ -35,10 +45,66 @@ div p {
 	text-align: center;
 }
 
+.btn-secondary:hover {
+	background-color: lightgray;
+}
+
 #btn-new {
-	margin: 0px 0px 15px 30px;
+	margin: 20px 0px 0px 30px;
 	padding: 5px;
 	background-color: lightgray;
 	border: 1px solid lightgray;
 	border-radius: 15px;
 }
+/*Message Space*/
+
+.message-bar {
+	position: fixed;
+	top: 0px;
+	left: 300px;
+	width: 70%;
+	height: 100%;
+	background-color: white;
+	z-index: 1;
+}
+
+.message-bar-header {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.message-user {
+	float: left;
+	margin-left: 4px;
+}
+
+.message-time {
+	float: right;
+	margin-right: 4px;
+}
+
+.message-user-time {
+	width: 100%;
+	display: inline-block;
+	margin-top: 0px;
+	margin-left: 4px;
+	padding-top: 0px;
+	background-color: #EDF2F7;
+}
+
+.message-content {
+	margin-top: 0px;
+	margin-left: 6px;
+	padding-top: 0px;
+
+}
+
+/*element.style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;*/
+
+/*.chat-bar-header, .chat-bar-body {
+    padding: 10px;
+    height: 50px;
+    position: relative;*/

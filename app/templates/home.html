@@ -7,9 +7,16 @@
 		<h4><strong>Available Chat Rooms</strong></h4>
 
 		<div ng-repeat="room in home.roomList">
-			<!-- <h3>{{ room.$id }}</h3> -->
-			<p>{{ room.$value }}</p>
+			<p ng-click="home.setActiveRoom(room)">{{ room.$value }}</p>
 		</div>
 	</div>
-
+</div>
+<div class="message-bar">
+	<div class="message-bar-header">
+		<h2>{{ home.activeRoom.$value }}</h2>
+	</div>
+	<div class="message-bar-body" ng-repeat="message in home.messages">
+		<p class="message-user-time"><span class="message-user">{{ message.userName }}</span><span class="message-time">{{ message.sentAt }}</span></p>
+		<p class="message-content">{{ message.content }}</p>
+	</div>
 </div>
