@@ -37,6 +37,10 @@ div p {
 	margin-top: 15px;
 }
 
+.modalWindow {
+	background-color: #EDF2F7;
+}
+
 .modal-header, .modal-body {
 	text-align: center;
 }
