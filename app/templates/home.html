@@ -15,8 +15,16 @@
 	<div class="message-bar-header">
 		<h2>{{ home.activeRoom.$value }}</h2>
 	</div>
+
 	<div class="message-bar-body" ng-repeat="message in home.messages">
 		<p class="message-user-time"><span class="message-user">{{ message.userName }}</span><span class="message-time">{{ message.sentAt }}</span></p>
 		<p class="message-content">{{ message.content }}</p>
 	</div>
+
+	<div class="message-bar-new-message" ng-show="home.activeRoom !== null">
+		<span class="user">{{ home.currentUser }} :</span>
+		<input type="text" class="message-input" ng-model="home.newMessage" name="message" placeholder="Write your message here">
+		<button type="button" class="message-send" ng-click="home.sendMessage(home.newMessage, home.activeRoom)">Send</button>
+	</div>
+
 </div>

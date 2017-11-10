@@ -59,6 +59,7 @@ div p {
 	background-color: lightgray;
 	border: 1px solid lightgray;
 	border-radius: 15px;
+	font-weight: bold;
 }
 /*Message Space*/
 
@@ -66,7 +67,7 @@ div p {
 	position: fixed;
 	top: 0px;
 	left: 300px;
-	width: 70%;
+	width: 75%;
 	height: 100%;
 	background-color: white;
 	z-index: 1;
@@ -94,6 +95,7 @@ div p {
 	margin-left: 4px;
 	padding-top: 0px;
 	background-color: #EDF2F7;
+	border-radius: 10px;
 }
 
 .message-content {
@@ -103,12 +105,38 @@ div p {
 
 }
 
-/*element.style {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;*/
+/*New message bar*/
 
-/*.chat-bar-header, .chat-bar-body {
-    padding: 10px;
-    height: 50px;
-    position: relative;*/
+.message-bar-new-message {
+	display: inline-block;
+	position: absolute;
+	padding-bottom: 4px;
+	bottom: 0;
+	margin-left: 4px;
+	width: 100%;
+}
+.user {
+	font-weight: bold;
+	background-color: #EDF2F7;
+	padding: 4px;
+	border-radius: 10px;
+}
+
+.message-input {
+	width: 87%;
+	margin-left: 2px;
+}
+
+.message-send {
+	background-color: lightgray;
+	border: 1px solid lightgray;
+	font-weight: bold;
+	border-radius: 10px;
+	margin-left: 2px;
+}
+
+
+
+
+
+
