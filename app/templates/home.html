@@ -11,9 +11,10 @@
 		</div>
 	</div>
 </div>
-<div class="message-bar">
+<div class="message-bar" ng-show="home.activeRoom !== null">
 	<div class="message-bar-header">
 		<h2>{{ home.activeRoom.$value }}</h2>
+		<button type="button" class="btn-logout" ng-click="home.userLogout()">Logout {{ home.currentUser }}</button>
 	</div>
 
 	<div class="message-bar-body" ng-repeat="message in home.messages">
